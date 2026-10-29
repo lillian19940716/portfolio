@@ -39,11 +39,11 @@ body[data-category="graphic"]{background:#fff}
 .device-position{font-size:12px;letter-spacing:2px;font-variant-numeric:tabular-nums;color:#4e5945}
 .device-status p{font-size:10px;color:var(--muted);letter-spacing:.5px;margin:8px 0 0;white-space:nowrap}
 .device-current-category{text-align:center;font-size:13px;letter-spacing:1px;color:#535f49;margin:24px 0 -10px;line-height:1.6}
-.device-swipe-hint{position:absolute;left:calc(100% + 20px);top:35%;width:66px;color:#617253;opacity:.68;pointer-events:none;text-align:center;animation:swipe-up 2s ease-in-out 3}
-.device-swipe-hint svg{display:block;width:66px;height:82px}
+.device-swipe-hint{position:absolute;left:calc(100% + 20px);top:32%;width:76px;color:#617253;opacity:.8;pointer-events:none;text-align:center;animation:swipe-up 2s ease-in-out 3}
+.device-swipe-hint svg{display:block;width:76px;height:104px}
 .device-swipe-hint span{display:block;font-size:11px;letter-spacing:2px;margin-top:12px}
-@keyframes swipe-up{0%,100%{transform:translateY(10px);opacity:.4}55%{transform:translateY(-10px);opacity:.75}}
+@keyframes swipe-up{0%,100%{transform:translateY(10px);opacity:.6}55%{transform:translateY(-10px);opacity:.9}}
 .video-error{position:absolute;inset:0;z-index:1;margin:0!important;padding:20px;display:grid;place-content:center;background:#191c18;color:#e6ebdf!important}
 @media(max-width:700px){#film-gallery{gap:48px;padding-bottom:32px}.video-group>h2{font-size:20px;margin-bottom:22px;padding-bottom:14px}.is-phone{max-width:280px}.is-computer .device-shell{padding:8px 8px 23px;border-radius:11px}.is-computer .device-shell::after{width:4px;height:4px;bottom:9px}.monitor-stand{height:42px;border-bottom-width:6px}.device-controls{gap:18px;margin-top:20px}.device-controls button{width:40px;height:40px}}
-@media(max-width:700px){.is-phone{width:calc(100% - 76px);transform:translateX(-32px)}.device-swipe-hint{left:calc(100% + 13px);width:58px}.device-swipe-hint svg{width:58px;height:74px}}
+@media(max-width:700px){.is-phone{width:calc(100% - 76px);transform:translateX(-32px)}.device-swipe-hint{left:calc(100% + 13px);width:58px}.device-swipe-hint svg{width:58px;height:80px}}
 @media(prefers-reduced-motion:reduce){.device-swipe-hint{animation:none}.video-reel{scroll-behavior:auto}}

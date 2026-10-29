@@ -56,7 +56,7 @@
     let swipeHint;
     if (portrait) {
       swipeHint = document.createElement("div"); swipeHint.className = "device-swipe-hint"; swipeHint.setAttribute("aria-hidden", "true");
-      swipeHint.innerHTML = '<svg viewBox="0 0 68 84" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="swipe-arrow" d="M11 39V7M4 15l7-8 7 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 62 17 48c-2-4-1-7 2-8 3-1 5 1 8 5V22c0-5 7-5 7 0v16c2-5 8-5 10 0 3-4 8-2 9 2 5-1 8 2 8 6v10c0 7-4 12-9 17v7H32v-8c-3-3-5-6-7-10Z" fill="var(--paper)" fill-opacity=".65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>向上滑</span>';
+      swipeHint.innerHTML = '<svg viewBox="0 0 140 190" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="35" y="6" width="55" height="132" rx="26" fill="#e9e9e7" fill-opacity=".8" stroke="#8c9187" stroke-width="1"/><path class="swipe-arrow" d="M63 47V20m-6 7 6-7 6 7" stroke="#8fc600" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 185c-9-8-14-17-14-29l1-30c0-11-8-28-7-34 1-7 8-8 13-2 6 8 8 20 9 29l1 14 4-14V62c0-9 2-15 9-16 8-2 14 3 14 13l1 39c6-6 13-3 17 4l7 12c5-4 11 0 15 6l6 9c6-1 10 5 14 11 10 14 11 25 3 36l-5 9H42Z" fill="#fff" fill-opacity=".93" stroke="#8b9085" stroke-width="1.1" stroke-linejoin="round"/><path d="m73 98 5 20m19-4 6 12m15 3 5 8M45 133l-5 21" stroke="#969b90" stroke-width="1.1" stroke-linecap="round"/></svg><span>向上滑</span>';
       stage.append(swipeHint);
     }
     if (!portrait) { const stand = document.createElement("div"); stand.className = "monitor-stand"; stand.setAttribute("aria-hidden", "true"); stage.append(stand); }
