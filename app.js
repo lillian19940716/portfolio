@@ -70,6 +70,33 @@
     const next = document.createElement("button"); next.type = "button"; next.textContent = portrait ? "↓" : "→"; next.setAttribute("aria-label", `${name}：下一支影片`);
     controls.append(previous, status, next); stage.append(controls); section.append(heading, stage); filmGallery.append(section);
     let current = 0;
+    let visible = false;
+    function prepare(player) {
+      if (!player || player.preload === "auto") return;
+      player.preload = "auto";
+      if (player.readyState === 0) player.load();
+    }
+    function prepareCurrentAndNext() {
+      if (!visible || document.body.dataset.category !== "film") return;
+      const selected = current;
+      const player = reel.children[selected]?.querySelector("video");
+      if (!player) return;
+      prepare(player);
+      const prepareNext = () => {
+        if (visible && current === selected && document.body.dataset.category === "film") prepare(reel.children[selected + 1]?.querySelector("video"));
+      };
+      if (player.readyState >= 3) prepareNext();
+      else player.addEventListener("canplay", prepareNext, {once: true});
+    }
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(entries => {
+        visible = entries[0].isIntersecting;
+        if (visible) prepareCurrentAndNext();
+      }, {rootMargin: "120px 0px"}).observe(stage);
+    } else {
+      visible = true;
+      window.addEventListener("hashchange", prepareCurrentAndNext);
+    }
     function update() {
       const total = reel.children.length;
       caption.textContent = reel.children[current]?.dataset.videoCategory || "";
@@ -78,6 +105,7 @@
       previous.hidden = next.hidden = total < 2;
       hint.textContent = total > 1 ? `${portrait ? "上下" : "左右"}滑動，探索下一支作品` : "點選播放影片";
       [...reel.children].forEach((slide, index) => { if (index !== current) slide.querySelector("video")?.pause(); });
+      prepareCurrentAndNext();
     }
     function move(delta) {
       const target = Math.max(0, Math.min(reel.children.length - 1, current + delta));
@@ -134,6 +162,10 @@
       }
       const poster = localVideoAsset(video.poster, /\.(?:jpe?g|png|webp)$/i);
       if (poster) player.poster = poster;
+      const loading = document.createElement("span"); loading.className = "video-loading"; loading.hidden = true;
+      loading.setAttribute("role", "status"); loading.textContent = "影片緩衝中…";
+      player.addEventListener("waiting", () => { loading.hidden = false; });
+      ["playing", "canplay", "pause", "ended", "error"].forEach(event => player.addEventListener(event, () => { loading.hidden = true; }));
       player.addEventListener("play", () => {
         filmGallery.querySelectorAll("video").forEach(other => { if (other !== player) other.pause(); });
       });
@@ -141,7 +173,7 @@
       fallback.append("影片暫時無法播放，請重新整理或 ");
       const direct = document.createElement("a"); direct.href = source; direct.textContent = "直接開啟影片"; fallback.append(direct);
       player.addEventListener("error", () => { fallback.hidden = false; });
-      frame.append(player); article.append(frame, fallback);
+      frame.append(player, loading); article.append(frame, fallback);
     } else {
       const iframe = document.createElement("iframe");
       iframe.src = embed.href; iframe.title = label; iframe.loading = "lazy"; iframe.allowFullscreen = true;
