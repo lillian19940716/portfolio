@@ -41,7 +41,6 @@ body[data-category="graphic"]{background:#fff}
 .device-current-category{text-align:center;font-size:13px;letter-spacing:1px;color:#535f49;margin:24px 0 -10px;line-height:1.6}
 .device-swipe-hint{position:absolute;left:calc(100% + 20px);top:32%;width:76px;color:#617253;opacity:.8;pointer-events:none;text-align:center}
 .device-swipe-hint svg{display:block;width:76px;height:104px}
-.device-swipe-hint span{display:block;font-size:11px;letter-spacing:2px;margin-top:12px}
 .swipe-arrow{animation:arrow-rise 1.8s ease-in-out infinite}
 @keyframes arrow-rise{0%{transform:translateY(8px);opacity:0}30%,65%{opacity:1}100%{transform:translateY(-8px);opacity:0}}
 .video-error{position:absolute;inset:0;z-index:1;margin:0!important;padding:20px;display:grid;place-content:center;background:#191c18;color:#e6ebdf!important}
