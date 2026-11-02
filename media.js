@@ -7,66 +7,18 @@ window.PORTFOLIO_MEDIA = {
       "title": "",
       "photos": [
         {
-          "src": "./assets/photography/originals/flat-01.jpg",
-          "preview": "./assets/photography/previews/flat-01.jpg",
-          "thumbnail": "./assets/photography/thumbnails/flat-01.jpg",
+          "src": "./assets/photography/originals/flat-05.jpg",
+          "preview": "./assets/photography/previews/flat-05.jpg",
+          "thumbnail": "./assets/photography/thumbnails/flat-05.jpg",
           "alt": "商品攝影，第 1 張",
           "width": 3120,
           "height": 2336
         },
         {
-          "src": "./assets/photography/originals/flat-02.jpg",
-          "preview": "./assets/photography/previews/flat-02.jpg",
-          "thumbnail": "./assets/photography/thumbnails/flat-02.jpg",
-          "alt": "商品攝影，第 2 張",
-          "width": 2263,
-          "height": 3023
-        },
-        {
-          "src": "./assets/photography/originals/flat-03.jpg",
-          "preview": "./assets/photography/previews/flat-03.jpg",
-          "thumbnail": "./assets/photography/thumbnails/flat-03.jpg",
-          "alt": "商品攝影，第 3 張",
-          "width": 2179,
-          "height": 2910
-        },
-        {
-          "src": "./assets/photography/originals/flat-04.jpg",
-          "preview": "./assets/photography/previews/flat-04.jpg",
-          "thumbnail": "./assets/photography/thumbnails/flat-04.jpg",
-          "alt": "商品攝影，第 4 張",
-          "width": 2336,
-          "height": 3120
-        },
-        {
-          "src": "./assets/photography/originals/flat-05.jpg",
-          "preview": "./assets/photography/previews/flat-05.jpg",
-          "thumbnail": "./assets/photography/thumbnails/flat-05.jpg",
-          "alt": "商品攝影，第 5 張",
-          "width": 3120,
-          "height": 2336
-        },
-        {
-          "src": "./assets/photography/originals/flat-06.jpg",
-          "preview": "./assets/photography/previews/flat-06.jpg",
-          "thumbnail": "./assets/photography/thumbnails/flat-06.jpg",
-          "alt": "商品攝影，第 6 張",
-          "width": 1703,
-          "height": 2274
-        },
-        {
-          "src": "./assets/photography/originals/flat-07.jpg",
-          "preview": "./assets/photography/previews/flat-07.jpg",
-          "thumbnail": "./assets/photography/thumbnails/flat-07.jpg",
-          "alt": "商品攝影，第 7 張",
-          "width": 2259,
-          "height": 3018
-        },
-        {
           "src": "./assets/photography/originals/flat-08.jpg",
           "preview": "./assets/photography/previews/flat-08.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-08.jpg",
-          "alt": "商品攝影，第 8 張",
+          "alt": "商品攝影，第 2 張",
           "width": 3120,
           "height": 2336
         },
@@ -74,9 +26,57 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-09.jpg",
           "preview": "./assets/photography/previews/flat-09.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-09.jpg",
-          "alt": "商品攝影，第 9 張",
+          "alt": "商品攝影，第 3 張",
           "width": 3120,
           "height": 2336
+        },
+        {
+          "src": "./assets/photography/originals/flat-01.jpg",
+          "preview": "./assets/photography/previews/flat-01.jpg",
+          "thumbnail": "./assets/photography/thumbnails/flat-01.jpg",
+          "alt": "商品攝影，第 4 張",
+          "width": 3120,
+          "height": 2336
+        },
+        {
+          "src": "./assets/photography/originals/flat-02.jpg",
+          "preview": "./assets/photography/previews/flat-02.jpg",
+          "thumbnail": "./assets/photography/thumbnails/flat-02.jpg",
+          "alt": "商品攝影，第 5 張",
+          "width": 2263,
+          "height": 3023
+        },
+        {
+          "src": "./assets/photography/originals/flat-03.jpg",
+          "preview": "./assets/photography/previews/flat-03.jpg",
+          "thumbnail": "./assets/photography/thumbnails/flat-03.jpg",
+          "alt": "商品攝影，第 6 張",
+          "width": 2179,
+          "height": 2910
+        },
+        {
+          "src": "./assets/photography/originals/flat-04.jpg",
+          "preview": "./assets/photography/previews/flat-04.jpg",
+          "thumbnail": "./assets/photography/thumbnails/flat-04.jpg",
+          "alt": "商品攝影，第 7 張",
+          "width": 2336,
+          "height": 3120
+        },
+        {
+          "src": "./assets/photography/originals/flat-06.jpg",
+          "preview": "./assets/photography/previews/flat-06.jpg",
+          "thumbnail": "./assets/photography/thumbnails/flat-06.jpg",
+          "alt": "商品攝影，第 8 張",
+          "width": 1703,
+          "height": 2274
+        },
+        {
+          "src": "./assets/photography/originals/flat-07.jpg",
+          "preview": "./assets/photography/previews/flat-07.jpg",
+          "thumbnail": "./assets/photography/thumbnails/flat-07.jpg",
+          "alt": "商品攝影，第 9 張",
+          "width": 2259,
+          "height": 3018
         }
       ]
     },
@@ -509,6 +509,77 @@ window.PORTFOLIO_MEDIA = {
           "preview": "./assets/photography/previews/beauty-07.jpg",
           "thumbnail": "./assets/photography/thumbnails/beauty-07.jpg",
           "alt": "美容情境攝影，第 7 張",
+          "width": 3072,
+          "height": 4096
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "category": "產品攝影",
+      "title": "",
+      "photos": [
+        {
+          "src": "./assets/photography/originals/product-01.jpg",
+          "preview": "./assets/photography/previews/product-01.jpg",
+          "thumbnail": "./assets/photography/thumbnails/product-01.jpg",
+          "alt": "產品攝影，第 1 張",
+          "width": 3072,
+          "height": 4096
+        },
+        {
+          "src": "./assets/photography/originals/product-02.jpg",
+          "preview": "./assets/photography/previews/product-02.jpg",
+          "thumbnail": "./assets/photography/thumbnails/product-02.jpg",
+          "alt": "產品攝影，第 2 張",
+          "width": 4096,
+          "height": 3072
+        },
+        {
+          "src": "./assets/photography/originals/product-03.jpg",
+          "preview": "./assets/photography/previews/product-03.jpg",
+          "thumbnail": "./assets/photography/thumbnails/product-03.jpg",
+          "alt": "產品攝影，第 3 張",
+          "width": 3072,
+          "height": 4096
+        },
+        {
+          "src": "./assets/photography/originals/product-04.jpg",
+          "preview": "./assets/photography/previews/product-04.jpg",
+          "thumbnail": "./assets/photography/thumbnails/product-04.jpg",
+          "alt": "產品攝影，第 4 張",
+          "width": 3072,
+          "height": 4096
+        },
+        {
+          "src": "./assets/photography/originals/product-06.jpg",
+          "preview": "./assets/photography/previews/product-06.jpg",
+          "thumbnail": "./assets/photography/thumbnails/product-06.jpg",
+          "alt": "產品攝影，第 5 張",
+          "width": 3072,
+          "height": 4096
+        },
+        {
+          "src": "./assets/photography/originals/product-07.jpg",
+          "preview": "./assets/photography/previews/product-07.jpg",
+          "thumbnail": "./assets/photography/thumbnails/product-07.jpg",
+          "alt": "產品攝影，第 6 張",
+          "width": 3015,
+          "height": 4020
+        },
+        {
+          "src": "./assets/photography/originals/product-08.jpg",
+          "preview": "./assets/photography/previews/product-08.jpg",
+          "thumbnail": "./assets/photography/thumbnails/product-08.jpg",
+          "alt": "產品攝影，第 7 張",
+          "width": 3072,
+          "height": 4096
+        },
+        {
+          "src": "./assets/photography/originals/product-09.jpg",
+          "preview": "./assets/photography/previews/product-09.jpg",
+          "thumbnail": "./assets/photography/thumbnails/product-09.jpg",
+          "alt": "產品攝影，第 8 張",
           "width": 3072,
           "height": 4096
         }
