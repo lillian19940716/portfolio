@@ -4,13 +4,13 @@ window.PORTFOLIO_MEDIA = {
     {
       "id": "flat",
       "category": "商品攝影",
-      "title": "服飾平拍",
+      "title": "",
       "photos": [
         {
           "src": "./assets/photography/originals/flat-01.jpg",
           "preview": "./assets/photography/previews/flat-01.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-01.jpg",
-          "alt": "商品攝影・服飾平拍，第 1 張",
+          "alt": "商品攝影，第 1 張",
           "width": 3120,
           "height": 2336
         },
@@ -18,7 +18,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-02.jpg",
           "preview": "./assets/photography/previews/flat-02.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-02.jpg",
-          "alt": "商品攝影・服飾平拍，第 2 張",
+          "alt": "商品攝影，第 2 張",
           "width": 2263,
           "height": 3023
         },
@@ -26,7 +26,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-03.jpg",
           "preview": "./assets/photography/previews/flat-03.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-03.jpg",
-          "alt": "商品攝影・服飾平拍，第 3 張",
+          "alt": "商品攝影，第 3 張",
           "width": 2179,
           "height": 2910
         },
@@ -34,7 +34,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-04.jpg",
           "preview": "./assets/photography/previews/flat-04.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-04.jpg",
-          "alt": "商品攝影・服飾平拍，第 4 張",
+          "alt": "商品攝影，第 4 張",
           "width": 2336,
           "height": 3120
         },
@@ -42,7 +42,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-05.jpg",
           "preview": "./assets/photography/previews/flat-05.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-05.jpg",
-          "alt": "商品攝影・服飾平拍，第 5 張",
+          "alt": "商品攝影，第 5 張",
           "width": 3120,
           "height": 2336
         },
@@ -50,7 +50,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-06.jpg",
           "preview": "./assets/photography/previews/flat-06.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-06.jpg",
-          "alt": "商品攝影・服飾平拍，第 6 張",
+          "alt": "商品攝影，第 6 張",
           "width": 1703,
           "height": 2274
         },
@@ -58,7 +58,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-07.jpg",
           "preview": "./assets/photography/previews/flat-07.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-07.jpg",
-          "alt": "商品攝影・服飾平拍，第 7 張",
+          "alt": "商品攝影，第 7 張",
           "width": 2259,
           "height": 3018
         },
@@ -66,7 +66,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-08.jpg",
           "preview": "./assets/photography/previews/flat-08.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-08.jpg",
-          "alt": "商品攝影・服飾平拍，第 8 張",
+          "alt": "商品攝影，第 8 張",
           "width": 3120,
           "height": 2336
         },
@@ -74,7 +74,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/flat-09.jpg",
           "preview": "./assets/photography/previews/flat-09.jpg",
           "thumbnail": "./assets/photography/thumbnails/flat-09.jpg",
-          "alt": "商品攝影・服飾平拍，第 9 張",
+          "alt": "商品攝影，第 9 張",
           "width": 3120,
           "height": 2336
         }
@@ -83,13 +83,13 @@ window.PORTFOLIO_MEDIA = {
     {
       "id": "fashion-1",
       "category": "商業攝影",
-      "title": "場次 01",
+      "title": "",
       "photos": [
         {
           "src": "./assets/photography/originals/fashion-1-01.jpg",
           "preview": "./assets/photography/previews/fashion-1-01.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-01.jpg",
-          "alt": "商業攝影・場次 01，第 1 張",
+          "alt": "商業攝影，第 1 張",
           "width": 2336,
           "height": 3120
         },
@@ -97,7 +97,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-02.jpg",
           "preview": "./assets/photography/previews/fashion-1-02.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-02.jpg",
-          "alt": "商業攝影・場次 01，第 2 張",
+          "alt": "商業攝影，第 2 張",
           "width": 1476,
           "height": 1971
         },
@@ -105,7 +105,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-03.jpg",
           "preview": "./assets/photography/previews/fashion-1-03.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-03.jpg",
-          "alt": "商業攝影・場次 01，第 3 張",
+          "alt": "商業攝影，第 3 張",
           "width": 2074,
           "height": 2771
         },
@@ -113,7 +113,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-04.jpg",
           "preview": "./assets/photography/previews/fashion-1-04.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-04.jpg",
-          "alt": "商業攝影・場次 01，第 4 張",
+          "alt": "商業攝影，第 4 張",
           "width": 2146,
           "height": 2866
         },
@@ -121,7 +121,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-05.jpg",
           "preview": "./assets/photography/previews/fashion-1-05.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-05.jpg",
-          "alt": "商業攝影・場次 01，第 5 張",
+          "alt": "商業攝影，第 5 張",
           "width": 2245,
           "height": 2999
         },
@@ -129,7 +129,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-06.jpg",
           "preview": "./assets/photography/previews/fashion-1-06.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-06.jpg",
-          "alt": "商業攝影・場次 01，第 6 張",
+          "alt": "商業攝影，第 6 張",
           "width": 2336,
           "height": 3120
         },
@@ -137,7 +137,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-07.jpg",
           "preview": "./assets/photography/previews/fashion-1-07.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-07.jpg",
-          "alt": "商業攝影・場次 01，第 7 張",
+          "alt": "商業攝影，第 7 張",
           "width": 1859,
           "height": 2482
         },
@@ -145,7 +145,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-08.jpg",
           "preview": "./assets/photography/previews/fashion-1-08.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-08.jpg",
-          "alt": "商業攝影・場次 01，第 8 張",
+          "alt": "商業攝影，第 8 張",
           "width": 1250,
           "height": 1670
         },
@@ -153,7 +153,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-09.jpg",
           "preview": "./assets/photography/previews/fashion-1-09.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-09.jpg",
-          "alt": "商業攝影・場次 01，第 9 張",
+          "alt": "商業攝影，第 9 張",
           "width": 1965,
           "height": 2625
         },
@@ -161,7 +161,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-10.jpg",
           "preview": "./assets/photography/previews/fashion-1-10.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-10.jpg",
-          "alt": "商業攝影・場次 01，第 10 張",
+          "alt": "商業攝影，第 10 張",
           "width": 2156,
           "height": 2879
         },
@@ -169,7 +169,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-1-11.jpg",
           "preview": "./assets/photography/previews/fashion-1-11.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-1-11.jpg",
-          "alt": "商業攝影・場次 01，第 11 張",
+          "alt": "商業攝影，第 11 張",
           "width": 2122,
           "height": 2834
         }
@@ -178,13 +178,13 @@ window.PORTFOLIO_MEDIA = {
     {
       "id": "fashion-2",
       "category": "商業攝影",
-      "title": "場次 02",
+      "title": "",
       "photos": [
         {
           "src": "./assets/photography/originals/fashion-2-01.jpg",
           "preview": "./assets/photography/previews/fashion-2-01.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-01.jpg",
-          "alt": "商業攝影・場次 02，第 1 張",
+          "alt": "商業攝影，第 1 張",
           "width": 1523,
           "height": 2034
         },
@@ -192,7 +192,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-02.jpg",
           "preview": "./assets/photography/previews/fashion-2-02.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-02.jpg",
-          "alt": "商業攝影・場次 02，第 2 張",
+          "alt": "商業攝影，第 2 張",
           "width": 2136,
           "height": 2853
         },
@@ -200,7 +200,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-03.jpg",
           "preview": "./assets/photography/previews/fashion-2-03.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-03.jpg",
-          "alt": "商業攝影・場次 02，第 3 張",
+          "alt": "商業攝影，第 3 張",
           "width": 1509,
           "height": 2016
         },
@@ -208,7 +208,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-04.jpg",
           "preview": "./assets/photography/previews/fashion-2-04.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-04.jpg",
-          "alt": "商業攝影・場次 02，第 4 張",
+          "alt": "商業攝影，第 4 張",
           "width": 1942,
           "height": 2594
         },
@@ -216,7 +216,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-05.jpg",
           "preview": "./assets/photography/previews/fashion-2-05.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-05.jpg",
-          "alt": "商業攝影・場次 02，第 5 張",
+          "alt": "商業攝影，第 5 張",
           "width": 1124,
           "height": 1501
         },
@@ -224,7 +224,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-06.jpg",
           "preview": "./assets/photography/previews/fashion-2-06.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-06.jpg",
-          "alt": "商業攝影・場次 02，第 6 張",
+          "alt": "商業攝影，第 6 張",
           "width": 1189,
           "height": 1588
         },
@@ -232,7 +232,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-07.jpg",
           "preview": "./assets/photography/previews/fashion-2-07.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-07.jpg",
-          "alt": "商業攝影・場次 02，第 7 張",
+          "alt": "商業攝影，第 7 張",
           "width": 2254,
           "height": 3011
         },
@@ -240,7 +240,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-08.jpg",
           "preview": "./assets/photography/previews/fashion-2-08.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-08.jpg",
-          "alt": "商業攝影・場次 02，第 8 張",
+          "alt": "商業攝影，第 8 張",
           "width": 1557,
           "height": 2080
         },
@@ -248,7 +248,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-09.jpg",
           "preview": "./assets/photography/previews/fashion-2-09.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-09.jpg",
-          "alt": "商業攝影・場次 02，第 9 張",
+          "alt": "商業攝影，第 9 張",
           "width": 3120,
           "height": 2336
         },
@@ -256,7 +256,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-10.jpg",
           "preview": "./assets/photography/previews/fashion-2-10.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-10.jpg",
-          "alt": "商業攝影・場次 02，第 10 張",
+          "alt": "商業攝影，第 10 張",
           "width": 3120,
           "height": 2336
         },
@@ -264,7 +264,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-11.jpg",
           "preview": "./assets/photography/previews/fashion-2-11.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-11.jpg",
-          "alt": "商業攝影・場次 02，第 11 張",
+          "alt": "商業攝影，第 11 張",
           "width": 2874,
           "height": 2152
         },
@@ -272,7 +272,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-12.jpg",
           "preview": "./assets/photography/previews/fashion-2-12.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-12.jpg",
-          "alt": "商業攝影・場次 02，第 12 張",
+          "alt": "商業攝影，第 12 張",
           "width": 2873,
           "height": 2151
         },
@@ -280,7 +280,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-13.jpg",
           "preview": "./assets/photography/previews/fashion-2-13.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-13.jpg",
-          "alt": "商業攝影・場次 02，第 13 張",
+          "alt": "商業攝影，第 13 張",
           "width": 2513,
           "height": 1882
         },
@@ -288,7 +288,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-2-14.jpg",
           "preview": "./assets/photography/previews/fashion-2-14.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-2-14.jpg",
-          "alt": "商業攝影・場次 02，第 14 張",
+          "alt": "商業攝影，第 14 張",
           "width": 3120,
           "height": 2336
         }
@@ -297,13 +297,13 @@ window.PORTFOLIO_MEDIA = {
     {
       "id": "fashion-3",
       "category": "商業攝影",
-      "title": "場次 03",
+      "title": "",
       "photos": [
         {
           "src": "./assets/photography/originals/fashion-3-01.jpg",
           "preview": "./assets/photography/previews/fashion-3-01.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-3-01.jpg",
-          "alt": "商業攝影・場次 03，第 1 張",
+          "alt": "商業攝影，第 1 張",
           "width": 3082,
           "height": 2308
         },
@@ -311,7 +311,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-3-02.jpg",
           "preview": "./assets/photography/previews/fashion-3-02.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-3-02.jpg",
-          "alt": "商業攝影・場次 03，第 2 張",
+          "alt": "商業攝影，第 2 張",
           "width": 2807,
           "height": 2101
         },
@@ -319,7 +319,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-3-03.jpg",
           "preview": "./assets/photography/previews/fashion-3-03.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-3-03.jpg",
-          "alt": "商業攝影・場次 03，第 3 張",
+          "alt": "商業攝影，第 3 張",
           "width": 2933,
           "height": 2196
         },
@@ -327,7 +327,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-3-04.jpg",
           "preview": "./assets/photography/previews/fashion-3-04.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-3-04.jpg",
-          "alt": "商業攝影・場次 03，第 4 張",
+          "alt": "商業攝影，第 4 張",
           "width": 3120,
           "height": 2336
         },
@@ -335,7 +335,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-3-05.jpg",
           "preview": "./assets/photography/previews/fashion-3-05.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-3-05.jpg",
-          "alt": "商業攝影・場次 03，第 5 張",
+          "alt": "商業攝影，第 5 張",
           "width": 1434,
           "height": 1915
         },
@@ -343,7 +343,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-3-06.jpg",
           "preview": "./assets/photography/previews/fashion-3-06.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-3-06.jpg",
-          "alt": "商業攝影・場次 03，第 6 張",
+          "alt": "商業攝影，第 6 張",
           "width": 1911,
           "height": 2553
         },
@@ -351,7 +351,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-3-07.jpg",
           "preview": "./assets/photography/previews/fashion-3-07.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-3-07.jpg",
-          "alt": "商業攝影・場次 03，第 7 張",
+          "alt": "商業攝影，第 7 張",
           "width": 2108,
           "height": 2815
         },
@@ -359,7 +359,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-3-08.jpg",
           "preview": "./assets/photography/previews/fashion-3-08.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-3-08.jpg",
-          "alt": "商業攝影・場次 03，第 8 張",
+          "alt": "商業攝影，第 8 張",
           "width": 1848,
           "height": 2469
         }
@@ -368,13 +368,13 @@ window.PORTFOLIO_MEDIA = {
     {
       "id": "fashion-4",
       "category": "商業攝影",
-      "title": "場次 04",
+      "title": "",
       "photos": [
         {
           "src": "./assets/photography/originals/fashion-4-01.jpg",
           "preview": "./assets/photography/previews/fashion-4-01.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-4-01.jpg",
-          "alt": "商業攝影・場次 04，第 1 張",
+          "alt": "商業攝影，第 1 張",
           "width": 3120,
           "height": 2336
         },
@@ -382,7 +382,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-4-02.jpg",
           "preview": "./assets/photography/previews/fashion-4-02.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-4-02.jpg",
-          "alt": "商業攝影・場次 04，第 2 張",
+          "alt": "商業攝影，第 2 張",
           "width": 3120,
           "height": 2336
         },
@@ -390,7 +390,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-4-03.jpg",
           "preview": "./assets/photography/previews/fashion-4-03.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-4-03.jpg",
-          "alt": "商業攝影・場次 04，第 3 張",
+          "alt": "商業攝影，第 3 張",
           "width": 3106,
           "height": 2326
         },
@@ -398,7 +398,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-4-04.jpg",
           "preview": "./assets/photography/previews/fashion-4-04.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-4-04.jpg",
-          "alt": "商業攝影・場次 04，第 4 張",
+          "alt": "商業攝影，第 4 張",
           "width": 2320,
           "height": 1737
         },
@@ -406,7 +406,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-4-05.jpg",
           "preview": "./assets/photography/previews/fashion-4-05.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-4-05.jpg",
-          "alt": "商業攝影・場次 04，第 5 張",
+          "alt": "商業攝影，第 5 張",
           "width": 3105,
           "height": 2325
         },
@@ -414,7 +414,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-4-06.jpg",
           "preview": "./assets/photography/previews/fashion-4-06.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-4-06.jpg",
-          "alt": "商業攝影・場次 04，第 6 張",
+          "alt": "商業攝影，第 6 張",
           "width": 1394,
           "height": 1862
         }
@@ -423,13 +423,13 @@ window.PORTFOLIO_MEDIA = {
     {
       "id": "fashion-5",
       "category": "商業攝影",
-      "title": "場次 05",
+      "title": "",
       "photos": [
         {
           "src": "./assets/photography/originals/fashion-5-01.jpg",
           "preview": "./assets/photography/previews/fashion-5-01.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-5-01.jpg",
-          "alt": "商業攝影・場次 05，第 1 張",
+          "alt": "商業攝影，第 1 張",
           "width": 3120,
           "height": 2336
         },
@@ -437,7 +437,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-5-02.jpg",
           "preview": "./assets/photography/previews/fashion-5-02.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-5-02.jpg",
-          "alt": "商業攝影・場次 05，第 2 張",
+          "alt": "商業攝影，第 2 張",
           "width": 3120,
           "height": 2336
         },
@@ -445,7 +445,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/fashion-5-03.jpg",
           "preview": "./assets/photography/previews/fashion-5-03.jpg",
           "thumbnail": "./assets/photography/thumbnails/fashion-5-03.jpg",
-          "alt": "商業攝影・場次 05，第 3 張",
+          "alt": "商業攝影，第 3 張",
           "width": 2304,
           "height": 1728
         }
@@ -454,13 +454,13 @@ window.PORTFOLIO_MEDIA = {
     {
       "id": "beauty",
       "category": "美容情境攝影",
-      "title": "泡泡貓",
+      "title": "",
       "photos": [
         {
           "src": "./assets/photography/originals/beauty-01.jpg",
           "preview": "./assets/photography/previews/beauty-01.jpg",
           "thumbnail": "./assets/photography/thumbnails/beauty-01.jpg",
-          "alt": "美容情境攝影・泡泡貓，第 1 張",
+          "alt": "美容情境攝影，第 1 張",
           "width": 3072,
           "height": 4096
         },
@@ -468,7 +468,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/beauty-02.jpg",
           "preview": "./assets/photography/previews/beauty-02.jpg",
           "thumbnail": "./assets/photography/thumbnails/beauty-02.jpg",
-          "alt": "美容情境攝影・泡泡貓，第 2 張",
+          "alt": "美容情境攝影，第 2 張",
           "width": 3072,
           "height": 4096
         },
@@ -476,7 +476,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/beauty-03.jpg",
           "preview": "./assets/photography/previews/beauty-03.jpg",
           "thumbnail": "./assets/photography/thumbnails/beauty-03.jpg",
-          "alt": "美容情境攝影・泡泡貓，第 3 張",
+          "alt": "美容情境攝影，第 3 張",
           "width": 3072,
           "height": 4096
         },
@@ -484,7 +484,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/beauty-04.jpg",
           "preview": "./assets/photography/previews/beauty-04.jpg",
           "thumbnail": "./assets/photography/thumbnails/beauty-04.jpg",
-          "alt": "美容情境攝影・泡泡貓，第 4 張",
+          "alt": "美容情境攝影，第 4 張",
           "width": 3072,
           "height": 4096
         },
@@ -492,7 +492,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/beauty-05.jpg",
           "preview": "./assets/photography/previews/beauty-05.jpg",
           "thumbnail": "./assets/photography/thumbnails/beauty-05.jpg",
-          "alt": "美容情境攝影・泡泡貓，第 5 張",
+          "alt": "美容情境攝影，第 5 張",
           "width": 3072,
           "height": 4096
         },
@@ -500,7 +500,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/beauty-06.jpg",
           "preview": "./assets/photography/previews/beauty-06.jpg",
           "thumbnail": "./assets/photography/thumbnails/beauty-06.jpg",
-          "alt": "美容情境攝影・泡泡貓，第 6 張",
+          "alt": "美容情境攝影，第 6 張",
           "width": 3072,
           "height": 4096
         },
@@ -508,7 +508,7 @@ window.PORTFOLIO_MEDIA = {
           "src": "./assets/photography/originals/beauty-07.jpg",
           "preview": "./assets/photography/previews/beauty-07.jpg",
           "thumbnail": "./assets/photography/thumbnails/beauty-07.jpg",
-          "alt": "美容情境攝影・泡泡貓，第 7 張",
+          "alt": "美容情境攝影，第 7 張",
           "width": 3072,
           "height": 4096
         }

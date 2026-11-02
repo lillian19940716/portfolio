@@ -19,25 +19,21 @@
   window.renderPortfolioPhotography = (projects = []) => {
     const gallery = document.getElementById("photography-gallery");
     const sections = [
-      {id: "flat", label: "商品攝影", description: "服飾平拍"},
-      {id: "commercial", label: "商業攝影", description: "服飾形象 · 五場拍攝"},
-      {id: "beauty", label: "美容情境攝影", description: "泡泡貓"},
-      {id: "product", label: "產品攝影", description: ""},
-      {id: "family", label: "親子攝影", description: ""}
+      {id: "flat", label: "商品攝影"},
+      {id: "commercial", label: "商業攝影"},
+      {id: "beauty", label: "美容情境攝影"},
+      {id: "product", label: "產品攝影"},
+      {id: "family", label: "親子攝影"}
     ];
     const valid = projects.map(project => ({...project, photos: (project.photos || []).map(photo => ({...photo, src: asset(photo.src), preview: asset(photo.preview), thumbnail: asset(photo.thumbnail)})).filter(photo => photo.src && photo.preview && photo.thumbnail)})).filter(project => project.photos.length);
     if (!valid.length) return;
     const navigation = element("nav", "photo-navigation"); navigation.setAttribute("aria-label", "攝影分類");
     gallery.before(navigation);
 
-    function buildProject(project, container, nested) {
-      const title = nested ? `商業攝影・${project.title}` : project.category;
+    function buildProject(project, container) {
+      const title = project.category;
       const article = element("article", "photo-project"); article.dataset.project = project.id;
       const photos = project.photos;
-      if (nested) {
-        const header = element("div", "photo-project-heading");
-        header.append(element("h3", "", project.title), element("span", "photo-total", `${photos.length} 張`)); article.append(header);
-      }
       const frame = element("div", "photo-stage"); frame.setAttribute("role", "region"); frame.setAttribute("aria-label", `${title}照片`);
       const mainLink = element("a", "photo-main"); mainLink.setAttribute("aria-label", `放大${title}照片`); mainLink.draggable = false;
       const image = element("img"); image.loading = "lazy"; image.decoding = "async"; image.draggable = false;
@@ -110,12 +106,11 @@
       const heading = element("header", "photo-category-heading");
       const headingText = element("div"); const h2 = element("h2", "", definition.label); h2.id = `${section.id}-title`;
       section.setAttribute("aria-labelledby", h2.id); headingText.append(h2);
-      if (definition.description) headingText.append(element("p", "", definition.description));
       const total = count ? `${definition.id === "commercial" ? `${projects.length} 場 · ` : ""}${count} 張` : "整理中";
       heading.append(headingText, element("span", "photo-total", total)); section.append(heading);
       const jump = element("button", "", definition.label); jump.type = "button";
       jump.addEventListener("click", () => section.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"})); navigation.append(jump);
-      projects.forEach(project => buildProject(project, section, definition.id === "commercial"));
+      projects.forEach(project => buildProject(project, section));
       if (!count) section.append(element("p", "photo-pending", "作品整理中，敬請期待。"));
       gallery.append(section);
     });
