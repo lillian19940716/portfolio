@@ -53,7 +53,7 @@
         const button = element("button", "photo-thumbnail"); button.type = "button";
         button.setAttribute("aria-label", `${title}：第 ${index + 1} 張，共 ${photos.length} 張`);
         const thumb = element("img"); thumb.src = photo.thumbnail; thumb.alt = ""; thumb.loading = "lazy"; thumb.decoding = "async"; thumb.width = photo.width; thumb.height = photo.height;
-        button.append(thumb, element("span", "", pad(index + 1)));
+        button.append(thumb);
         button.addEventListener("click", () => select(index)); thumbnails.append(button); return button;
       });
       article.append(frame, meta, thumbnails); container.append(article);
