@@ -113,7 +113,7 @@
       if (definition.description) headingText.append(element("p", "", definition.description));
       const total = count ? `${definition.id === "commercial" ? `${projects.length} 場 · ` : ""}${count} 張` : "整理中";
       heading.append(headingText, element("span", "photo-total", total)); section.append(heading);
-      const jump = element("button"); jump.type = "button"; jump.append(element("span", "", definition.label), element("span", "", total));
+      const jump = element("button", "", definition.label); jump.type = "button";
       jump.addEventListener("click", () => section.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"})); navigation.append(jump);
       projects.forEach(project => buildProject(project, section, definition.id === "commercial"));
       if (!count) section.append(element("p", "photo-pending", "作品整理中，敬請期待。"));
