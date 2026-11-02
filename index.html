@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="沛瑜的作品集：平面設計、攝影與影片。">
+  <meta name="description" content="沛瑜的作品集：平面設計、攝影、影片與 AI 創作與應用。">
   <meta name="theme-color" content="#202420">
   <title>沛瑜｜作品集</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=20261102-photo4">
+  <link rel="stylesheet" href="./styles.css?v=20261102-ai6">
   <script src="./media.js?v=20261102-product1" defer></script>
   <script src="./video-player.js?v=20261030-player2" defer></script>
   <script src="./photography.js?v=20261102-photo4" defer></script>
-  <script src="./app.js?v=20261102-photo4" defer></script>
+  <script src="./ai-data.js?v=20261102-ai6" defer></script>
+  <script src="./ai.js?v=20261102-ai6" defer></script>
+  <script src="./app.js?v=20261102-ai5" defer></script>
 </head>
 <body data-category="graphic">
   <a class="skip-link" href="#main">跳至作品內容</a>
@@ -23,6 +25,7 @@
         <a href="#graphic" data-category="graphic" aria-current="page"><span><span class="nav-number">01</span>平面設計<small>Graphic design</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a>
         <a href="#photography" data-category="photography"><span><span class="nav-number">02</span>攝影<small>Photography</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a>
         <a href="#film" data-category="film"><span><span class="nav-number">03</span>影片<small>Film & motion</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+        <a href="#ai" data-category="ai"><span><span class="nav-number">04</span>AI 創作與應用<small>AI Creation &amp; Applications</small></span><span class="nav-arrow" aria-hidden="true">↗</span></a>
       </nav>
       <details class="page-index" id="page-index"><summary>頁面索引 <span aria-hidden="true">＋</span></summary><nav aria-label="平面作品頁面"><a href="#page-001" aria-label="前往第 01 頁">01</a><a href="#page-002" aria-label="前往第 02 頁">02</a><a href="#page-003" aria-label="前往第 03 頁">03</a><a href="#page-004" aria-label="前往第 04 頁">04</a><a href="#page-005" aria-label="前往第 05 頁">05</a><a href="#page-006" aria-label="前往第 06 頁">06</a><a href="#page-007" aria-label="前往第 07 頁">07</a><a href="#page-008" aria-label="前往第 08 頁">08</a><a href="#page-009" aria-label="前往第 09 頁">09</a><a href="#page-010" aria-label="前往第 10 頁">10</a><a href="#page-011" aria-label="前往第 11 頁">11</a><a href="#page-012" aria-label="前往第 12 頁">12</a><a href="#page-013" aria-label="前往第 13 頁">13</a><a href="#page-014" aria-label="前往第 14 頁">14</a><a href="#page-015" aria-label="前往第 15 頁">15</a><a href="#page-016" aria-label="前往第 16 頁">16</a><a href="#page-017" aria-label="前往第 17 頁">17</a><a href="#page-018" aria-label="前往第 18 頁">18</a><a href="#page-019" aria-label="前往第 19 頁">19</a><a href="#page-020" aria-label="前往第 20 頁">20</a><a href="#page-021" aria-label="前往第 21 頁">21</a><a href="#page-022" aria-label="前往第 22 頁">22</a><a href="#page-023" aria-label="前往第 23 頁">23</a><a href="#page-024" aria-label="前往第 24 頁">24</a><a href="#page-025" aria-label="前往第 25 頁">25</a><a href="#page-026" aria-label="前往第 26 頁">26</a></nav></details>
     </div>
@@ -68,6 +71,12 @@
       <header class="collection-header"><div><p class="eyebrow">03 / FILM & MOTION</p><h1 id="film-title">影片</h1></div></header>
       <div id="film-gallery" class="gallery"></div>
       <div class="empty-state" id="film-empty"><span class="empty-number" aria-hidden="true">03</span><p class="eyebrow">FILM & MOTION</p><h2>讓畫面流動</h2><p>影片作品整理中，敬請期待。</p><a href="#graphic">先看看平面作品 <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section id="ai" class="collection" aria-labelledby="ai-title">
+      <header class="collection-header"><div><p class="eyebrow">04 / AI CREATION &amp; APPLICATIONS</p><h1 id="ai-title">AI 創作與應用</h1></div></header>
+      <div id="ai-gallery"></div>
+      <noscript><p class="ai-section-description">請啟用 JavaScript 以瀏覽 AI 專案圖片與製作過程。</p></noscript>
+      <footer class="collection-footer"><span>AI 創作與應用</span><a href="#ai">回到頂端 ↑</a></footer>
     </section>
   </main>
   <dialog id="image-viewer" aria-labelledby="viewer-title">

@@ -1,14 +1,20 @@
 (() => {
   "use strict";
-  const categories = ["graphic", "photography", "film"];
-  const links = [...document.querySelectorAll("[data-category]")];
+  const categories = ["graphic", "photography", "film", "ai"];
+  const links = [...document.querySelectorAll(".categories a[data-category]")];
   const sections = categories.map(id => document.getElementById(id));
+  if (typeof ResizeObserver === "function") {
+    const header = document.querySelector(".sidebar");
+    const observer = new ResizeObserver(() => document.documentElement.style.setProperty("--nav-offset", `${header.getBoundingClientRect().height}px`));
+    observer.observe(header);
+  }
   function showCategory() {
     const hash = decodeURIComponent(location.hash.slice(1));
     const category = categories.includes(hash) ? hash : "graphic";
     document.body.dataset.category = category;
     sections.forEach(section => { section.hidden = section.id !== category; });
     if (category !== "film") document.querySelectorAll("#film-gallery video").forEach(video => video.pause());
+    if (category !== "ai") window.suspendPortfolioAI?.();
     links.forEach(link => {
       if (link.dataset.category === category) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
@@ -25,6 +31,7 @@
   const media = window.PORTFOLIO_MEDIA || {};
   window.renderPortfolioPhotography(media.photography || []);
   window.renderPortfolioVideos(media.videos || []);
+  window.renderPortfolioAI(window.PORTFOLIO_AI || {sections: [], projects: []});
 
   const dialog = document.getElementById("image-viewer");
   const image = document.getElementById("viewer-image");
