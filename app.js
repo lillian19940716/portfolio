@@ -23,24 +23,7 @@
   showCategory();
 
   const media = window.PORTFOLIO_MEDIA || {};
-  for (const [index, photo] of (media.photography || []).entries()) {
-    if (!photo.src) continue;
-    const figure = document.createElement("figure");
-    figure.className = "work";
-    const link = document.createElement("a");
-    link.className = "image-link";
-    link.href = photo.src;
-    link.dataset.viewer = "photography";
-    link.setAttribute("aria-label", `放大攝影作品 ${index + 1}`);
-    const img = document.createElement("img");
-    img.src = photo.src;
-    img.alt = photo.alt || `攝影作品 ${index + 1}`;
-    img.loading = "lazy";
-    img.decoding = "async";
-    link.append(img); figure.append(link);
-    document.getElementById("photography-gallery").append(figure);
-    document.getElementById("photography-empty").hidden = true;
-  }
+  window.renderPortfolioPhotography(media.photography || []);
   window.renderPortfolioVideos(media.videos || []);
 
   const dialog = document.getElementById("image-viewer");
@@ -49,35 +32,58 @@
   const zoom = document.getElementById("viewer-zoom");
   const previous = document.getElementById("viewer-prev");
   const next = document.getElementById("viewer-next");
-  let viewerLinks = [], currentIndex = 0, opener;
+  let viewerItems = [], currentIndex = 0, opener, onViewerChange;
   function renderImage(index) {
     currentIndex = index;
-    const link = viewerLinks[index];
-    const original = link.querySelector("img");
-    image.src = link.href; image.alt = original.alt;
-    document.getElementById("viewer-title").textContent = original.alt;
-    document.getElementById("viewer-original").href = link.href;
-    document.getElementById("viewer-position").textContent = `${index + 1} / ${viewerLinks.length}`;
-    previous.disabled = index === 0; next.disabled = index === viewerLinks.length - 1;
+    const item = viewerItems[index];
+    image.src = item.src; image.alt = item.alt;
+    document.getElementById("viewer-title").textContent = item.alt;
+    document.getElementById("viewer-original").href = item.src;
+    document.getElementById("viewer-position").textContent = `${index + 1} / ${viewerItems.length}`;
+    previous.disabled = index === 0; next.disabled = index === viewerItems.length - 1;
     stage.classList.remove("is-zoomed"); stage.scrollTo(0, 0);
     zoom.setAttribute("aria-pressed", "false"); zoom.textContent = "原尺寸";
+    onViewerChange?.(index);
+  }
+  function openViewer(items, index, source, onChange) {
+    if (!items.length) return;
+    viewerItems = items; opener = source; onViewerChange = onChange;
+    renderImage(index);
+    dialog.showModal(); document.body.classList.add("viewer-open");
+    document.getElementById("viewer-close").focus();
   }
   document.addEventListener("click", event => {
     const link = event.target.closest("a[data-viewer]");
     if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || typeof dialog.showModal !== "function") return;
-    event.preventDefault(); opener = link;
-    viewerLinks = [...document.querySelectorAll(`a[data-viewer="${link.dataset.viewer}"]`)];
-    renderImage(viewerLinks.indexOf(link));
-    dialog.showModal(); document.body.classList.add("viewer-open");
-    document.getElementById("viewer-close").focus();
+    event.preventDefault();
+    const items = [...document.querySelectorAll(`a[data-viewer="${link.dataset.viewer}"]`)];
+    openViewer(items.map(item => ({src: item.href, alt: item.querySelector("img").alt})), items.indexOf(link), link);
+  });
+  window.addEventListener("portfolio:open-photos", event => {
+    const {photos, index, opener, onChange} = event.detail;
+    openViewer(photos, index, opener, onChange);
   });
   document.getElementById("viewer-close").addEventListener("click", () => dialog.close());
-  dialog.addEventListener("close", () => { document.body.classList.remove("viewer-open"); image.removeAttribute("src"); opener?.focus({preventScroll:true}); });
+  dialog.addEventListener("close", () => { document.body.classList.remove("viewer-open"); image.removeAttribute("src"); onViewerChange = undefined; opener?.focus({preventScroll:true}); });
   previous.addEventListener("click", () => { if (currentIndex > 0) renderImage(currentIndex - 1); });
-  next.addEventListener("click", () => { if (currentIndex < viewerLinks.length - 1) renderImage(currentIndex + 1); });
+  next.addEventListener("click", () => { if (currentIndex < viewerItems.length - 1) renderImage(currentIndex + 1); });
   zoom.addEventListener("click", () => { const active = stage.classList.toggle("is-zoomed"); zoom.setAttribute("aria-pressed", String(active)); zoom.textContent = active ? "符合畫面" : "原尺寸"; });
   dialog.addEventListener("keydown", event => {
     if (event.key === "ArrowLeft" && !previous.disabled) { event.preventDefault(); previous.click(); }
     if (event.key === "ArrowRight" && !next.disabled) { event.preventDefault(); next.click(); }
+  });
+  image.draggable = false;
+  let viewerGesture;
+  stage.addEventListener("pointerdown", event => {
+    if (event.button === 0 && event.isPrimary && !stage.classList.contains("is-zoomed")) viewerGesture = {id: event.pointerId, x: event.clientX, y: event.clientY};
+  });
+  stage.addEventListener("pointercancel", () => { viewerGesture = null; });
+  stage.addEventListener("pointerup", event => {
+    if (!viewerGesture || viewerGesture.id !== event.pointerId || stage.classList.contains("is-zoomed")) return;
+    const dx = event.clientX - viewerGesture.x, dy = event.clientY - viewerGesture.y;
+    viewerGesture = null;
+    if (Math.abs(dx) < 45 || Math.abs(dx) < Math.abs(dy) * 1.3) return;
+    if (dx < 0 && !next.disabled) next.click();
+    if (dx > 0 && !previous.disabled) previous.click();
   });
 })();
