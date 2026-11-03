@@ -268,7 +268,8 @@ window.PORTFOLIO_AI = {
       "video": null,
       "links": [],
       "status": "completed",
-      "processOpen": true
+      "processOpen": true,
+      "showRoles": false
     },
     {
       "id": "product-imaging-draft",

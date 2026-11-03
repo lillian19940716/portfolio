@@ -142,7 +142,7 @@
     article.append(header);
     article.append(element("p", "ai-project-summary", project.summary));
     if (project.images?.length) {
-      article.append(element("h4", "ai-gallery-title", "最終成品"));
+      article.append(element("h4", "ai-gallery-title is-final", "最終成品"));
       renderImages(project.images, `${project.id}-final`, article);
     }
     if (project.website) renderWebsite(project.website, project.id, article);
