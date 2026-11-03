@@ -106,8 +106,9 @@
       const heading = element("header", "photo-category-heading");
       const headingText = element("div"); const h2 = element("h2", "", definition.label); h2.id = `${section.id}-title`;
       section.setAttribute("aria-labelledby", h2.id); headingText.append(h2);
-      const total = count ? `${definition.id === "commercial" ? `${projects.length} 場 · ` : ""}${count} 張` : "整理中";
-      heading.append(headingText, element("span", "photo-total", total)); section.append(heading);
+      heading.append(headingText);
+      if (definition.id !== "commercial") heading.append(element("span", "photo-total", count ? `${count} 張` : "整理中"));
+      section.append(heading);
       const jump = element("button", "", definition.label); jump.type = "button";
       jump.addEventListener("click", () => section.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"})); navigation.append(jump);
       projects.forEach(project => buildProject(project, section));
