@@ -12,8 +12,7 @@ window.PORTFOLIO_AI = {
       "number": "02",
       "title": "AI 商品影像應用",
       "english": "AI Product Imaging",
-      "description": "結合既有攝影與後製能力，探索商品影像的光線、背景與情境表現。",
-      "pending": "原始商品照片、AI 調整成果與對照說明整理中。"
+      "description": "以原始商品照片為基礎，運用 AI 延伸背景、光線與情境，呈現商品影像的整合應用。"
     },
     {
       "id": "digital",
@@ -272,20 +271,123 @@ window.PORTFOLIO_AI = {
       "showRoles": false
     },
     {
-      "id": "product-imaging-draft",
+      "id": "product-mask-serum",
       "section": "product",
-      "title": "",
-      "published": false,
+      "title": "面膜與精華｜商品組合情境",
+      "published": true,
       "source": {
-        "type": "pending",
-        "label": "來源待確認"
+        "type": "commercial",
+        "label": "商業設計"
       },
+      "summary": "運用面膜與精華的原始照片，延伸水面與藍色光影背景，將兩項商品整合至同一情境。",
       "images": [],
       "process": [],
-      "beforeAfter": null,
+      "beforeAfter": {
+        "before": [
+          {
+            "alt": "商品組合情境：面膜原始照片",
+            "src": "./assets/ai/product-mask-serum/originals/source-mask.jpg",
+            "preview": "./assets/ai/product-mask-serum/previews/source-mask.webp",
+            "width": 3072,
+            "height": 4096
+          },
+          {
+            "alt": "商品組合情境：精華原始照片",
+            "src": "./assets/ai/product-mask-serum/originals/source-serum.jpg",
+            "preview": "./assets/ai/product-mask-serum/previews/source-serum.webp",
+            "width": 3072,
+            "height": 4096
+          }
+        ],
+        "after": {
+          "alt": "面膜與精華的 AI 商品情境合成",
+          "src": "./assets/ai/product-mask-serum/originals/ai-composite.png",
+          "preview": "./assets/ai/product-mask-serum/previews/ai-composite.webp",
+          "width": 1201,
+          "height": 1309
+        }
+      },
       "video": null,
       "links": [],
-      "status": "materials-pending"
+      "status": "completed",
+      "showRoles": false
+    },
+    {
+      "id": "product-mask-scene",
+      "section": "product",
+      "title": "面膜｜自然情境延伸",
+      "published": true,
+      "source": {
+        "type": "commercial",
+        "label": "商業設計"
+      },
+      "summary": "以面膜原始照片為基礎，生成植物與水面情境，調整背景氛圍與整體色彩。",
+      "images": [],
+      "process": [],
+      "beforeAfter": {
+        "before": [
+          {
+            "alt": "自然情境延伸：面膜原始照片",
+            "src": "./assets/ai/product-mask-scene/originals/source-mask.jpg",
+            "preview": "./assets/ai/product-mask-scene/previews/source-mask.webp",
+            "width": 3072,
+            "height": 4096
+          }
+        ],
+        "after": {
+          "alt": "面膜的 AI 植物與水面情境",
+          "src": "./assets/ai/product-mask-scene/originals/ai-scene.png",
+          "preview": "./assets/ai/product-mask-scene/previews/ai-scene.webp",
+          "width": 1122,
+          "height": 1402
+        }
+      },
+      "video": null,
+      "links": [],
+      "status": "completed",
+      "showRoles": false
+    },
+    {
+      "id": "product-skincare-series",
+      "section": "product",
+      "title": "保養系列｜商品視覺整合",
+      "published": true,
+      "source": {
+        "type": "commercial",
+        "label": "商業設計"
+      },
+      "summary": "結合兩款保養品的原始照片，建立簡潔的米色背景與懸浮配置，整合系列商品的視覺風格。",
+      "images": [],
+      "process": [],
+      "beforeAfter": {
+        "before": [
+          {
+            "alt": "保養系列：商品原始照片一",
+            "src": "./assets/ai/product-skincare-series/originals/source-product-01.jpg",
+            "preview": "./assets/ai/product-skincare-series/previews/source-product-01.webp",
+            "width": 2336,
+            "height": 3120
+          },
+          {
+            "alt": "保養系列：商品原始照片二",
+            "src": "./assets/ai/product-skincare-series/originals/source-product-02.jpg",
+            "preview": "./assets/ai/product-skincare-series/previews/source-product-02.webp",
+            "width": 2336,
+            "height": 3120
+          }
+        ],
+        "after": {
+          "alt": "保養系列的 AI 商品情境合成",
+          "src": "./assets/ai/product-skincare-series/originals/ai-series.png",
+          "preview": "./assets/ai/product-skincare-series/previews/ai-series.webp",
+          "width": 1122,
+          "height": 1402
+        }
+      },
+      "video": null,
+      "links": [],
+      "status": "completed",
+      "showRoles": false
     },
     {
       "id": "ai-medical-marketing",
