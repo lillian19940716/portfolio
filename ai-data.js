@@ -21,6 +21,13 @@ window.PORTFOLIO_AI = {
       "english": "AI Digital Applications",
       "description": "透過中原大學 AI 行銷課程進修，學習數位工具在行銷內容中的應用。",
       "pending": "課程作品與自主實作的專案素材、操作流程及成果整理中。"
+    },
+    {
+      "id": "automation",
+      "number": "04",
+      "title": "n8n 自動化工作流程",
+      "english": "n8n Automation Workflows",
+      "description": "建立自動化機器人，規劃資料處理、AI 查詢與內容發佈流程，呈現工具串接及實際操作。"
     }
   ],
   "projects": [
@@ -421,7 +428,7 @@ window.PORTFOLIO_AI = {
     },
     {
       "id": "n8n-workflows",
-      "section": "digital",
+      "section": "automation",
       "title": "n8n 自動化工作流程",
       "published": true,
       "source": {
@@ -491,7 +498,8 @@ window.PORTFOLIO_AI = {
           ]
         }
       ],
-      "showSource": false
+      "showSource": false,
+      "asSectionContent": true
     },
     {
       "id": "pomodoro-pwa",

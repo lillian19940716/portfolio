@@ -115,11 +115,11 @@
       figure.append(direct); container.append(figure);
     });
   }
-  function renderWorkflows(workflows, projectId, container) {
+  function renderWorkflows(workflows, projectId, container, headingTag = "h4") {
     workflows.forEach(workflow => {
       const section = element("section", "ai-workflow"); section.id = `ai-workflow-${workflow.id}`;
       const heading = element("header", "ai-workflow-heading");
-      heading.append(element("h4", "", workflow.title));
+      heading.append(element(headingTag, "", workflow.title));
       if (workflow.showSource !== false) heading.append(element("span", "ai-source", workflow.source.label));
       section.append(heading);
       if (workflow.summary) section.append(element("p", "ai-workflow-summary", workflow.summary));
@@ -133,20 +133,25 @@
   }
   function renderProject(project, container) {
     const article = element("article", "ai-project"); article.id = `ai-project-${project.id}`;
-    const header = element("header", "ai-project-heading");
-    const heading = element("h3", "", project.title); heading.id = `${article.id}-title`;
-    article.setAttribute("aria-labelledby", heading.id);
-    const source = project.source || {label: "作品來源待補充"};
-    header.append(heading);
-    if (project.showSource !== false) header.append(element("span", "ai-source", source.label));
-    article.append(header);
-    article.append(element("p", "ai-project-summary", project.summary));
+    if (project.asSectionContent) {
+      article.classList.add("is-section-content");
+      article.setAttribute("aria-labelledby", `${container.id}-title`);
+    } else {
+      const header = element("header", "ai-project-heading");
+      const heading = element("h3", "", project.title); heading.id = `${article.id}-title`;
+      article.setAttribute("aria-labelledby", heading.id);
+      const source = project.source || {label: "作品來源待補充"};
+      header.append(heading);
+      if (project.showSource !== false) header.append(element("span", "ai-source", source.label));
+      article.append(header);
+      article.append(element("p", "ai-project-summary", project.summary));
+    }
     if (project.images?.length) {
       article.append(element("h4", "ai-gallery-title is-final", "最終成品"));
       renderImages(project.images, `${project.id}-final`, article);
     }
     if (project.website) renderWebsite(project.website, project.id, article);
-    if (project.workflows?.length) renderWorkflows(project.workflows, project.id, article);
+    if (project.workflows?.length) renderWorkflows(project.workflows, project.id, article, project.asSectionContent ? "h3" : "h4");
 
     if (project.showRoles !== false && (project.aiRole || project.humanRole)) {
       const roles = element("dl", "ai-roles");

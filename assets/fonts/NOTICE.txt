@@ -1,0 +1,7 @@
+Portfolio Rounded Bold is a title-only subset of GenSen Rounded 2 TW Bold v2.100.
+Upstream source: https://github.com/ButTaiwan/gensen-font/tree/v2.100
+Original font: otf/TW/GenSenRounded2TW-B.otf
+Derived family name: Portfolio Rounded
+Changes: Unicode subsetting and family/PostScript renaming; glyph outlines are unchanged.
+The original copyright notice is preserved in the font metadata and OFL.txt.
+Distributed under the SIL Open Font License 1.1; see OFL.txt.
