@@ -179,10 +179,11 @@
       const comparison = element("section", "ai-comparison");
       if (project.beforeAfter.title) comparison.append(element("h4", "", project.beforeAfter.title));
       const columns = element("div", "ai-comparison-columns");
-      for (const side of ["before", "after"]) {
+      for (const side of ["after", "before"]) {
         const value = project.beforeAfter[side];
         const images = Array.isArray(value) ? value : [value];
         const column = element("div", "ai-comparison-column");
+        column.classList.add(side === "before" ? "is-original" : "is-result");
         column.append(element("h4", `ai-gallery-title${side === "after" ? " is-final" : ""}`, side === "after" ? "最終成品" : "原始商品照片"));
         renderImages(images, `${project.id}-comparison-${side}`, column, images.length === 1 ? "wide" : undefined);
         columns.append(column);

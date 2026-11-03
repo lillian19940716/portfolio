@@ -119,11 +119,13 @@ body[data-category="graphic"]{background:#fff}
 .ai-process-step .ai-image-link img{height:clamp(200px,28vw,350px);object-fit:contain}
 .ai-comparison{margin-top:28px}
 .ai-comparison .ai-image-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-.ai-comparison-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.ai-comparison-columns{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,1fr);gap:24px;align-items:start}
 .ai-comparison-column{min-width:0}
 .ai-comparison-column>.ai-gallery-title{font-size:11px;letter-spacing:1px;margin:0 0 14px}
-.ai-comparison-columns .ai-image-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ai-comparison-columns .ai-image-grid{grid-template-columns:minmax(0,1fr)}
 .ai-comparison-columns .ai-image-grid.is-wide{grid-template-columns:minmax(0,1fr)}
+.ai-comparison-column.is-original .ai-image-grid{gap:16px}
+.ai-comparison-column.is-original .ai-image-link img{aspect-ratio:3/4;object-fit:contain}
 .ai-links{display:flex;flex-wrap:wrap;gap:20px;margin-top:24px}
 .ai-links a,.ai-video-link{font-size:12px;line-height:1.7;border-bottom:1px solid #aeb89f;padding-bottom:6px}
 .ai-pending{padding:25px 0 8px}
@@ -147,9 +149,10 @@ body[data-category="graphic"]{background:#fff}
   .ai-project-heading h3{font-size:18px}
   .ai-project-summary{margin-bottom:21px}
   .ai-image-grid,.ai-comparison .ai-image-grid{grid-template-columns:minmax(0,1fr);gap:16px}
-  .ai-comparison-columns{grid-template-columns:minmax(0,1fr);gap:24px}
-  .ai-comparison-columns .ai-image-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ai-comparison-columns{grid-template-columns:minmax(0,4fr) minmax(0,1fr);gap:12px}
+  .ai-comparison-columns .ai-image-grid{grid-template-columns:minmax(0,1fr)}
   .ai-comparison-columns .ai-image-grid.is-wide{grid-template-columns:minmax(0,1fr)}
+  .ai-comparison-column.is-original .ai-image-grid{gap:8px}
   .ai-roles{grid-template-columns:minmax(0,1fr);gap:16px;margin:22px 0}
   .ai-process-step .ai-image-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 10px}
   .ai-process-step .ai-image-link img{height:200px}
